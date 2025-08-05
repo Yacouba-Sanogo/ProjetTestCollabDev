@@ -1,0 +1,133 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+}
+
+.card-content p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.status {
+  background-color: #f28c38;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.status.active {
+  background-color: #f28c38;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tech {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+progress {
+  width: 80%;
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #f28c38;
+  border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #f28c38;
+  border-radius: 5px;
+}
+
+.collaborators {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.collab-icon {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.collab-icon::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #f28c38;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #e07b2f;
+}
+
+.btn.join {
+  padding: 8px 20px;
+}
