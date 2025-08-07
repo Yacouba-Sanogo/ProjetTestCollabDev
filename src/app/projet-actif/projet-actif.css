@@ -91,14 +91,23 @@ progress::-moz-progress-bar {
 }
 
 .collab-icon {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #ccc;
   border-radius: 50%;
   display: inline-block;
 }
 
 .collab-icon::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -5px;
+}
+.collabs-icon::after {
   content: '';
   width: 15px;
   height: 15px;

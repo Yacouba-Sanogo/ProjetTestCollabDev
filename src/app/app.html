@@ -1,1 +1,57 @@
 <router-outlet />
+<div class="container">
+
+<app-landing-page>
+    [title]="'ALP'"
+    [subtitle]="'Par Fatouma Dawara, Application de suivi de santé'"
+    [level]="'Débutant'"
+    [levelColor]="'#28a745'"
+    [mainButtonText]="'E-Commerce'"
+    [mainButtonColor]="'#ff007a'"
+    [collaborators]="10"
+    [status]="'En cours'"
+    [statusColor]="'#fd7e14'"
+    [isFavori]="false"
+    [duration]="'Il y a 3 jours'"
+    [showClose]="false"
+    (favoriToggled)="onFavoriToggled($event)"
+    (closeClicked)="onCloseClicked($event)">
+</app-landing-page>
+<app-landing-page>
+    [title]="'ALP'"
+    [subtitle]="'Par Fatouma Dawara, Application de suivi de santé'"
+    [level]="'Intermédiaire'"
+    [levelColor]="'#6c757d'"
+    [mainButtonText]="'Santé'"
+    [mainButtonColor]="'#007bff'"
+    [collaborators]="10"
+    [status]="'Terminé'"
+    [statusColor]="'#28a745'"
+    [isFavori]="true"
+    [duration]="'Il y a 3 jours'"
+    [showClose]="true"
+    (favoriToggled)="onFavoriToggled($event)"
+    (closeClicked)="onCloseClicked($event)">
+</app-landing-page>
+<app-landing-page>
+    [title]="'ALP'"
+    [subtitle]="'Par Fatouma Diawara, Application de suivi de santé'"
+    [level]="'Débutant'"
+    [levelColor]="'#28a745'"
+    [mainButtonText]="'E-Commerce'"
+    [mainButtonColor]="'#ff007a'"
+    [collaborators]="10"
+    [status]="'En cours'"
+    [statusColor]="'#fd7e14'"
+    [showCollaboratorsButton]="true"
+    [isFavori]="false"
+    [duration]="'Il y a 3 jours'"
+    [showClose]="false"
+    (favoriToggled)="onFavoriToggled($event)"
+    (closeClicked)="onCloseClicked($event)">
+</app-landing-page>
+<app-category-card>
+    
+</app-category-card>
+</div>
+

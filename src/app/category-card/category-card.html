@@ -1,0 +1,31 @@
+<div class="category-card">
+  <div class="header">
+    <div>
+        <span class="title">{{ title }}</span>
+        <span class="subtitle">{{ subtitle }}</span>
+
+    </div>
+    
+    <div id="level">
+         <span class="level" [style.color]="levelColor">{{ level }}</span>
+    </div>
+  </div>
+  
+  <button class="main-button" [style.background-color]="mainButtonColor">
+    {{ mainButtonText }}
+  </button>
+  <div class="details">
+    <span class="collaborators">{{ collaborators }} Collaborateurs</span>
+    <div class="status">
+         <span class="status" [style.color]="statusColor">{{ status }}</span>
+          <span class="statusS" [style.color]="statusColor">{{ statusS }}</span>
+    </div>
+   
+    <span (click)="toggleFavori()" [class.filled]="isFavori">★</span>
+  </div>
+  <div class="actions">
+    <button class="join-button">Rejoindre</button>
+    <span class="duration">{{ duration }}</span>
+    <button *ngIf="showClose" class="close-button" (click)="onClose()">Fermer</button>
+  </div>
+</div>

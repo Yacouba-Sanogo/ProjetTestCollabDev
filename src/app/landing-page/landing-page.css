@@ -1,0 +1,96 @@
+.category-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header {
+    flex: 1;
+    .title {
+      font-weight: bold;
+      color: #6c757d;
+      display: flex;
+      flex-direction: column;
+    }
+    .subtitle {
+      color: #adb5bd;
+      font-size: 0.9em;
+    }
+    .level {
+      padding: 2px 8px;
+      background-color: #e9ecef;
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+  }
+
+  .main-button {
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    .collaborators {
+      color: #6c757d;
+    }
+    .status {
+      padding: 2px 8px;
+      background-color: #e9ecef;
+      border-radius: 3px;
+    }
+    .filled {
+      color: #ffcc00; // Étoile jaune quand favori
+      cursor: pointer;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .join-button {
+      padding: 5px 15px;
+      background-color: #ff6200;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e65c00;
+      }
+    }
+    .duration {
+      color: #6c757d;
+      font-size: 0.9em;
+    }
+    .close-button {
+      padding: 5px 10px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+  }
+}
